@@ -4,3 +4,6 @@
 # Verticalization for farms and agro-industries
 
 Odoo module to manage farms and agro-industries.
+
+[//]: # (addons)
+[//]: # (end addons)
