@@ -1,0 +1,187 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* herd
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.0\n"
+
+#. module: herd
+#: model:ir.model,name:herd.model_animal
+#: model:ir.model.fields,field_description:herd.field_herd__animal_ids
+msgid "Animal"
+msgstr "Animal"
+
+#. module: herd
+#: model:ir.model,name:herd.model_animal_species
+msgid "Animal Species"
+msgstr "Espèces animal"
+
+#. module: herd
+#: model_terms:ir.ui.view,arch_db:herd.view_herd_form
+#, fuzzy
+#| msgid "Animal"
+msgid "Animals"
+msgstr "Animal"
+
+#. module: herd
+#: model:animal.species,name:herd.bovine
+msgid "Bovine"
+msgstr "Bovin"
+
+#. module: herd
+#: model:ir.model.fields,field_description:herd.field_animal__breed_id
+#: model:ir.model.fields,field_description:herd.field_herd__breed_id
+msgid "Breed"
+msgstr "Race"
+
+#. module: herd
+#: model:ir.model.fields,field_description:herd.field_animal_species__child_ids
+msgid "Child Species"
+msgstr "Espèce enfant"
+
+#. module: herd
+#: model_terms:ir.ui.view,arch_db:herd.view_herd_form
+msgid "Color"
+msgstr "Couleur"
+
+#. module: herd
+#: model:ir.model.fields,field_description:herd.field_herd__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: herd
+#: model:ir.model.fields,field_description:herd.field_herd__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: herd
+#: model:ir.model.fields,field_description:herd.field_animal__display_name
+#: model:ir.model.fields,field_description:herd.field_animal_species__display_name
+#: model:ir.model.fields,field_description:herd.field_herd__display_name
+#, fuzzy
+msgid "Display Name"
+msgstr "Nom"
+
+#. module: herd
+#: model:ir.model.fields,field_description:herd.field_animal_species__complete_name
+msgid "Family / Specie"
+msgstr "Famille / Espèce"
+
+#. module: herd
+#: model:ir.model.fields,field_description:herd.field_animal__father_id
+msgid "Father"
+msgstr "Père"
+
+#. module: herd
+#: model:ir.actions.act_window,name:herd.action_herd
+#: model:ir.model.fields,field_description:herd.field_animal__herd_id
+#: model:ir.ui.menu,name:herd.herd
+msgid "Herd"
+msgstr "Troupeau"
+
+#. module: herd
+#: model:ir.model,name:herd.model_herd
+msgid "Herd Inventory"
+msgstr "Liste de lroupeaux"
+
+#. module: herd
+#: model:ir.model.fields,help:herd.field_animal__date_in_herd
+msgid "Herd introduction"
+msgstr "Introduction dans le troupeau"
+
+#. module: herd
+#: model:ir.model.fields,field_description:herd.field_animal__id
+#: model:ir.model.fields,field_description:herd.field_animal_species__id
+#: model:ir.model.fields,field_description:herd.field_herd__id
+msgid "ID"
+msgstr ""
+
+#. module: herd
+#: model:ir.model.fields,field_description:herd.field_animal__date_in_herd
+msgid "Introduction Date"
+msgstr "Date d'introduction"
+
+#. module: herd
+#: model:ir.model.fields,field_description:herd.field_herd__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: herd
+#: model:ir.model.fields,field_description:herd.field_animal____last_update
+#: model:ir.model.fields,field_description:herd.field_animal_species____last_update
+#: model:ir.model.fields,field_description:herd.field_herd____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: herd
+#: model:ir.model.fields,field_description:herd.field_herd__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: herd
+#: model:ir.model.fields,field_description:herd.field_herd__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: herd
+#: model:ir.model.fields,field_description:herd.field_animal_species__level
+msgid "Level"
+msgstr "Niveau"
+
+#. module: herd
+#: model:ir.model.fields,field_description:herd.field_herd__name
+msgid "Livestock"
+msgstr "Cheptel"
+
+#. module: herd
+#: model:ir.model.fields,field_description:herd.field_animal__mother_id
+msgid "Mother"
+msgstr "Mère"
+
+#. module: herd
+#: model:ir.model.fields,field_description:herd.field_animal_species__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: herd
+#: model:animal.species,name:herd.ovine
+msgid "Ovine"
+msgstr "Ovin"
+
+#. module: herd
+#: model:ir.model.fields,field_description:herd.field_herd__partner_id
+msgid "Owner"
+msgstr "Propriétaire"
+
+#. module: herd
+#: model:ir.model.fields,field_description:herd.field_animal_species__parent_path
+#, fuzzy
+msgid "Parent Path"
+msgstr "Espèce parente"
+
+#. module: herd
+#: model:ir.model.fields,field_description:herd.field_animal_species__parent_id
+msgid "Parent Specie"
+msgstr "Espèce parente"
+
+#. module: herd
+#: model:ir.model.fields,field_description:herd.field_herd__specie_id
+msgid "Specie"
+msgstr "Espèce"
+
+#, fuzzy
+#~| msgid "Family / Specie"
+#~ msgid "Famille"
+#~ msgstr "Famille / Espèce"
