@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<odoo noupdate="1">
+
+<record id="bovine" model="animal.species">
+    <field name="name">Bovine</field>
+</record>
+
+<record id="ovine" model="animal.species">
+    <field name="name">Ovine</field>
+</record>
+
+</odoo>

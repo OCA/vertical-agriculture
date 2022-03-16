@@ -1,0 +1,37 @@
+<odoo>
+
+    <record id="view_animal_species_tree" model="ir.ui.view">
+        <field name="model">animal.species</field>
+        <field name="inherit_id" ref="animal.view_animal_species_tree" />
+        <field name="arch" type="xml">
+            <field name="name" position="before">
+                <field name="complete_name" />
+            </field>
+        </field>
+    </record>
+
+    <record id="view_animal_species_form" model="ir.ui.view">
+        <field name="model">animal.species</field>
+        <field name="inherit_id" ref="animal.view_animal_species_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//group[@id='left']" position="inside">
+                <field name="parent_id" />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="animal_specie_search_view" model="ir.ui.view">
+        <field name="model">animal.species</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <field name="parent_id" />
+            </search>
+        </field>
+    </record>
+
+    <record id="animal.action_animal_species" model="ir.actions.act_window">
+        <field name="name">Familly / Specie</field>
+    </record>
+
+</odoo>

@@ -1,0 +1,72 @@
+<odoo>
+
+    <record id="view_herd_tree" model="ir.ui.view">
+        <field name="model">herd</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="display_name" />
+                <field name="partner_id" />
+                <field name="specie_id" />
+                <field name="breed_id" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_herd_form" model="ir.ui.view">
+        <field name="model">herd</field>
+        <field name="arch" type="xml">
+            <form string="Color">
+                <header />
+                <sheet>
+                    <div class="oe_button_box" name="button_box" />
+                        <label for="name" class="oe_edit_only" />
+                        <h1>
+                            <field name="name" />
+                        </h1>
+                    <group id="main">
+                        <group id="left">
+                            <field name="partner_id" />
+                            <field name="specie_id" />
+                             <field
+                                name="breed_id"
+                                domain="[('species_id','=', specie_id)]"
+                                context="{'default_species_id': specie_id}"
+                            />
+                        </group>
+                        <group id="right" />
+                    </group>
+                    <group name="animals" string="Animals">
+                        <field name="animal_ids" nolabel="1" />
+                    </group>
+                    <notebook />
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers" />
+                    <field name="activity_ids" widget="mail_activity" />
+                    <field
+                        name="message_ids"
+                        widget="mail_thread"
+                        options="{'post_refresh': 'recipients'}"
+                    />
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="action_herd" model="ir.actions.act_window">
+        <field name="name">Herd</field>
+        <field name="res_model">herd</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="herd" action="action_herd" sequence="5" parent="animal.root" />
+
+    <menuitem id="animal.root" action="action_herd" />
+
+
+</odoo>
