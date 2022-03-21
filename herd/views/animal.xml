@@ -1,0 +1,26 @@
+<odoo>
+
+    <record id="view_animal_form" model="ir.ui.view">
+        <field name="model">animal</field>
+        <field name="inherit_id" ref="animal.view_animal_form" />
+        <field name="arch" type="xml">
+            <field name="species_id" position="before">
+                <field
+                    name="herd_id"
+                    domain="[('specie_id', '=', species_id), ('partner_id', '=', partner_id)]"
+                    context="{'default_specie_id': species_id}"
+                />
+            </field>
+            <field name="birth_date" position="after">
+                <field name="date_in_herd" />
+                <field name="mother_id" />
+                <field name="father_id" />
+            </field>
+            <field name="breed_id" position="attributes">
+                <attribute name="required">0</attribute>
+            </field>
+
+        </field>
+    </record>
+
+</odoo>
