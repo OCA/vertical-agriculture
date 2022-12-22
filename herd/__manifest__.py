@@ -3,7 +3,7 @@
 
 {
     "name": "Herd",
-    "version": "14.0.1.0.1",
+    "version": "14.0.1.1.0",
     "category": "Animal",
     "website": "https://github.com/OCA/vertical-agriculture",
     "author": "Akretion, Odoo Community Association (OCA)",
