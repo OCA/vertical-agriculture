@@ -20,7 +20,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[herd](herd/) | 14.0.1.0.1 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Animal Herd management
+[herd](herd/) | 14.0.1.1.0 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Animal Herd management
 
 [//]: # (end addons)
 
