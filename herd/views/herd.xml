@@ -64,9 +64,9 @@
         </field>
     </record>
 
-    <menuitem id="herd" action="action_herd" sequence="5" parent="animal.root" />
+    <menuitem id="herd" action="action_herd" sequence="5" parent="animal.menu_root" />
 
-    <menuitem id="animal.root" action="action_herd" />
+    <menuitem id="animal.menu_root" action="action_herd" />
 
 
 </odoo>
