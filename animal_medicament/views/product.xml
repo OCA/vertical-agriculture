@@ -1,0 +1,44 @@
+<odoo>
+    <record id="product_normal_form_view" model="ir.ui.view">
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='general_information']" position="after">
+                <page name="medical" string="Medical">
+                    <group>
+                        <group name="left">
+                            <field name="therapist_code" />
+                        </group>
+                        <group name="right">
+                            <field name="market_authorization" />
+                        </group>
+                    </group>
+                    <group>
+                        <field name="medical_register_link" />
+                    </group>
+                    <group name="posology" string="Posologies" col="4">
+                        <field
+                            name="posology_ids"
+                            nolabel="1"
+                            context="{'default_product_id': context.get('product_id',active_id)}"
+                        />
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="product_product_tree_view" model="ir.ui.view">
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_product_tree_view" />
+        <field name="arch" type="xml">
+            <field name="type" position="after">
+                <field name="posology_ids" optional="hide" />
+                <field name="therapist_code" optional="hide" />
+                <field name="medical_register_link" optional="hide" />
+                <field name="market_authorization" optional="hide" />
+            </field>
+        </field>
+    </record>
+
+</odoo>
