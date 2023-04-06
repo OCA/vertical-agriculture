@@ -8,6 +8,7 @@ setuptools.setup(
     description="Meta package for oca-vertical-agriculture Odoo addons",
     version=version,
     install_requires=[
+        'odoo14-addon-animal_medicament',
         'odoo14-addon-herd',
     ],
     classifiers=[
