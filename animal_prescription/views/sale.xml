@@ -1,0 +1,78 @@
+<odoo>
+
+    <record id="view_order_form" model="ir.ui.view">
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form" />
+        <field name="priority" eval="100" />
+        <field name="arch" type="xml">
+
+            <field name="sale_order_template_id" position="before">
+                <field
+                    name="herd_id"
+                    domain="[('partner_id', '=', partner_id)]"
+                    context="{'default_partner_id': partner_id}"
+                />
+                <field name="specie_id" invisible="1" />
+                <field
+                    name="animal_ids"
+                    widget="many2many_tags"
+                    domain="['|', '&amp;', ('herd_id', '=', False), ('partner_id', '=', partner_id), '&amp;', ('herd_id', '=', herd_id), ('herd_id', '!=', False)]"
+                    context="{'default_partner_id': partner_id, 'default_herd_id': herd_id, 'default_species_id': specie_id}"
+                />
+            </field>
+            <xpath
+                expr="//notebook/page[@name='order_lines']//tree/field[@name='lot_id']"
+                position="attributes"
+            >
+                <attribute
+                    name="attrs"
+                >{'required': [('product_tracking', 'in', ('lot', 'serial'))]}</attribute>
+            </xpath>
+            <xpath
+                expr="//notebook/page[@name='order_lines']//tree/field[@name='name']"
+                position="after"
+            >
+                <field
+                    name="animal_ids"
+                    optional="show"
+                    widget="many2many_tags"
+                    domain="['|', '&amp;', ('herd_id', '=', False), ('partner_id', '=', parent.partner_id), '&amp;', ('herd_id', '=', parent.herd_id), ('herd_id', '!=', False)]"
+                />
+                <button name="get_animals" icon="fa-users" type="object" />
+                <field name="animal_count" optional="show" />
+                <field
+                    name="specie_id"
+                    optional="show"
+                    domain="[('id', 'child_of', parent_specie_id)]"
+                />
+                <field name="physiology_id" optional="show" />
+                <field name="poso_description" optional="show" />
+                <field name="posology_id" optional="hide" />
+                <field name="milk_time_str" optional="hide" />
+                <field name="unit_milk" optional="hide" />
+                <field name="meat_time_str" optional="hide" />
+                <field name="unit_meat" optional="hide" />
+                <field name="parent_specie_id" invisible="1" />
+                <field name="product_tracking" invisible="1" />
+            </xpath>
+        </field>
+    </record>
+
+    <menuitem id="sale.sale_menu_root" name="Prescription" />
+
+    <record id="sale.action_orders" model="ir.actions.act_window">
+        <field name="domain" eval="False" />
+    </record>
+
+    <record id="view_order_tree" model="ir.ui.view">
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_tree" />
+        <field name="arch" type="xml">
+            <field name="state" position="after">
+                <field name="herd_id" optional="hide" />
+                <field name="animal_ids" optional="hide" />
+            </field>
+        </field>
+    </record>
+
+</odoo>

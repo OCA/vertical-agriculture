@@ -1,0 +1,13 @@
+<odoo>
+
+    <record id="view_herd_tree" model="ir.ui.view">
+        <field name="model">herd</field>
+        <field name="inherit_id" ref="herd.view_herd_tree" />
+        <field name="arch" type="xml">
+            <field name="breed_id" position="after">
+                <field name="animal_ids" optional="hide" />
+            </field>
+        </field>
+    </record>
+
+</odoo>

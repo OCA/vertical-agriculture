@@ -1,0 +1,10 @@
+<odoo>
+
+    <record id="base.user_admin" model="res.users">
+        <field
+            name="groups_id"
+            eval="[(4, ref('stock.group_production_lot')), (4, ref('product.group_product_pricelist')), (4, ref('product.group_sale_pricelist')), (4, ref('base.group_multi_company'))]"
+        />
+    </record>
+
+</odoo>

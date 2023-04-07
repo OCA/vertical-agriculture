@@ -1,0 +1,1 @@
+odoo14-addon-product_expiry_simple @ git+https://github.com/OCA/stock-logistics-workflow.git@refs/pull/1271/head#subdirectory=setup/product_expiry_simple
