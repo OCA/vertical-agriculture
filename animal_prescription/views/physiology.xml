@@ -1,0 +1,31 @@
+<odoo>
+
+    <record id="view_physiology_tree" model="ir.ui.view">
+        <field name="model">physiology</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="sequence" widget="handle" />
+                <field name="name" options="{'editable': 1}" />
+                <field name="active" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_physiology" model="ir.actions.act_window">
+        <field name="name">Etat physiologique</field>
+        <field name="res_model">physiology</field>
+        <field name="view_mode">tree</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+            </p>
+        </field>
+    </record>
+
+    <menuitem
+        id="physiology_menu"
+        action="action_physiology"
+        sequence="70"
+        parent="animal.menu_config"
+    />
+
+</odoo>
