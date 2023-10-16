@@ -346,6 +346,16 @@ msgstr ""
 msgid "Unread Messages Counter"
 msgstr ""
 
+#. module: herd
+#: model:ir.model.fields,field_description:herd.field_herd__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: herd
+#: model:ir.model.fields,help:herd.field_herd__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
 #, fuzzy
 #~| msgid "Family / Specie"
 #~ msgid "Famille"
