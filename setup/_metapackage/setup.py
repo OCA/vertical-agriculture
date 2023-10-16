@@ -9,6 +9,7 @@ setuptools.setup(
     version=version,
     install_requires=[
         'odoo14-addon-animal_medicament',
+        'odoo14-addon-animal_prescription',
         'odoo14-addon-herd',
     ],
     classifiers=[

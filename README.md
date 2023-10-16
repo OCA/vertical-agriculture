@@ -22,6 +22,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [animal_medicament](animal_medicament/) | 14.0.1.1.0 |  | Drug posologies definition for animals
+[animal_prescription](animal_prescription/) | 14.0.1.0.1 | [![bealav](https://github.com/bealav.png?size=30px)](https://github.com/bealav) | Management of prescriptions for veterinarians
 [herd](herd/) | 14.0.1.1.0 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Animal Herd management
 
 [//]: # (end addons)

@@ -3,7 +3,7 @@
 
 {
     "name": "Animal Prescriptions",
-    "version": "14.0.1.0.0",
+    "version": "14.0.1.0.1",
     "category": "Sales",
     "website": "https://github.com/OCA/vertical-agriculture",
     "author": "Akretion, Odoo Community Association (OCA)",
