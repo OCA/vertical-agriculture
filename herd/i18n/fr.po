@@ -175,7 +175,6 @@ msgstr ""
 
 #. module: herd
 #: model:ir.model.fields,help:herd.field_herd__message_has_error
-#: model:ir.model.fields,help:herd.field_herd__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr ""
 
@@ -310,11 +309,6 @@ msgstr "Espèce parente"
 #. module: herd
 #: model:ir.model.fields,field_description:herd.field_herd__activity_user_id
 msgid "Responsible User"
-msgstr ""
-
-#. module: herd
-#: model:ir.model.fields,field_description:herd.field_herd__message_has_sms_error
-msgid "SMS Delivery error"
 msgstr ""
 
 #. module: herd
