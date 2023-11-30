@@ -7,6 +7,7 @@
     "category": "Tools",
     "website": "https://github.com/OCA/vertical-agriculture",
     "author": "Akretion, Odoo Community Association (OCA)",
+    "maintainers": ["bealdav"],
     "license": "AGPL-3",
     "installable": True,
     "summary": "Drug posologies definition for animals",
