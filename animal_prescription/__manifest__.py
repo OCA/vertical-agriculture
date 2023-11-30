@@ -7,7 +7,7 @@
     "category": "Sales",
     "website": "https://github.com/OCA/vertical-agriculture",
     "author": "Akretion, Odoo Community Association (OCA)",
-    "maintainers": ["bealav"],
+    "maintainers": ["bealdav"],
     "license": "AGPL-3",
     "installable": True,
     "summary": "Management of prescriptions for veterinarians",
