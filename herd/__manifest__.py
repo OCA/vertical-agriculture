@@ -18,6 +18,7 @@
         "views/animal.xml",
         "views/herd.xml",
         "views/specie.xml",
+        "views/res_partner.xml",
         "data/animal_species.xml",
         "security/ir.model.access.csv",
     ],

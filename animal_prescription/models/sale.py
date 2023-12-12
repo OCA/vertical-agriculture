@@ -18,3 +18,10 @@ class SaleOrder(models.Model):
     def _compute_total_quantity(self):
         for rec in self:
             rec.total_quantity = sum(rec.order_line.mapped("product_uom_qty"))
+
+    @api.onchange("partner_id")
+    def _onchange_default_herd_id(self):
+        if self.partner_id and len(self.partner_id.herd_ids) == 1:
+            self.herd_id = self.partner_id.herd_ids.id
+        else:
+            self.herd_id = False
