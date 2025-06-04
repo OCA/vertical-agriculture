@@ -21,9 +21,9 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[animal_medicament](animal_medicament/) | 14.0.1.1.0 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Drug posologies definition for animals
-[animal_prescription](animal_prescription/) | 14.0.1.0.1 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Management of prescriptions for veterinarians
-[herd](herd/) | 14.0.1.1.0 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Animal Herd management
+[animal_medicament](animal_medicament/) | 14.0.1.1.0 | <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Drug posologies definition for animals
+[animal_prescription](animal_prescription/) | 14.0.1.0.1 | <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Management of prescriptions for veterinarians
+[herd](herd/) | 14.0.1.1.0 | <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Animal Herd management
 
 [//]: # (end addons)
 
