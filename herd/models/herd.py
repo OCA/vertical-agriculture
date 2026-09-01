@@ -9,9 +9,7 @@ class Herd(models.Model):
     _description = "Herd Inventory"
     _rec_name = "display_name"
 
-    display_name = fields.Char(
-        "Display Name", compute="_compute_display_name", store=True
-    )
+    display_name = fields.Char(compute="_compute_display_name", store=True)
     name = fields.Char(string="Livestock")
     partner_id = fields.Many2one(comodel_name="res.partner", string="Owner")
     specie_id = fields.Many2one(

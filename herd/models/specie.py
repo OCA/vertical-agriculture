@@ -13,7 +13,10 @@ class AnimalSpecies(models.Model):
 
     name = fields.Char(index=True, required=True)
     complete_name = fields.Char(
-        string="Family / Specie", compute="_compute_complete_name", store=True
+        string="Family / Specie",
+        compute="_compute_complete_name",
+        store=True,
+        recursive=True,
     )
     parent_id = fields.Many2one(
         comodel_name="animal.species",
@@ -36,9 +39,8 @@ class AnimalSpecies(models.Model):
     def _compute_complete_name(self):
         for specie in self:
             if specie.parent_id:
-                specie.complete_name = "%s / %s" % (
-                    specie.parent_id.complete_name,
-                    specie.name,
+                specie.complete_name = (
+                    f"{specie.parent_id.complete_name} / {specie.name}"
                 )
             else:
                 specie.complete_name = specie.name
