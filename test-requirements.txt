@@ -1,0 +1,1 @@
+odoo-addon-animal_owner @ git+https://github.com/OCA/partner-contact.git@refs/pull/2397/head#subdirectory=animal_owner
