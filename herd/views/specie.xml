@@ -1,5 +1,4 @@
 <odoo>
-
     <record id="view_animal_species_tree" model="ir.ui.view">
         <field name="model">animal.species</field>
         <field name="inherit_id" ref="animal.view_animal_species_tree" />
@@ -33,5 +32,4 @@
     <record id="animal.action_animal_species" model="ir.actions.act_window">
         <field name="name">Familly / Specie</field>
     </record>
-
 </odoo>
