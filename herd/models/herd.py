@@ -39,13 +39,13 @@ class Herd(models.Model):
                 return ""
 
         for rec in self:
-            partner, specie, breed, name = (
+            partner, specie, breed, herd_name = (
                 name(rec, "partner_id"),
                 name(rec, "specie_id"),
                 name(rec, "breed_id"),
                 name(rec, "name"),
             )
-            rec.display_name = f"{partner}: {specie}, {breed} {name}"
+            rec.display_name = f"{partner}: {specie}, {breed} {herd_name}"
 
     @api.onchange("specie_id")
     def breed_onchange(self):
