@@ -9,6 +9,7 @@
     "author": "Akretion, Odoo Community Association (OCA)",
     "maintainers": ["bealdav"],
     "license": "AGPL-3",
+    "development_status": "Beta",
     "installable": True,
     "summary": "Drug posologies definition for animals",
     "depends": [

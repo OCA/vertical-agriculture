@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_posology_user,posology.user,model_posology,base.group_user,1,1,1,1
+access_posology_user,posology.user,model_posology,base.group_user,1,0,0,0
+access_posology_manager,posology.manager,model_posology,animal.group_animal_manager,1,1,1,1
