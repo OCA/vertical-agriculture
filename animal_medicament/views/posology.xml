@@ -1,0 +1,65 @@
+<odoo>
+
+
+    <record id="posology_tree_view" model="ir.ui.view">
+        <field name="model">posology</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field
+                    name="product_id"
+                    invisible="not context.get('visible_product')"
+                />
+                <field name="specie_id" />
+                <field name="administered_dose" optional="hide" />
+                <field name="frequency" optional="hide" />
+                <field name="interval" optional="hide" />
+                <field name="duration" optional="hide" />
+                <field name="categ_id" optional="hide" />
+                <field name="milk_time" optional="show" />
+                <field name="unit_milk" optional="show" />
+                <field name="meat_time" optional="show" />
+                <field name="unit_meat" optional="show" />
+                <field name="description" />
+            </tree>
+        </field>
+    </record>
+    <record id="posology_search_view" model="ir.ui.view">
+        <field name="model">posology</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="product_id" />
+                <field name="categ_id" />
+                <field name="specie_id" />
+                <field name="milk_time" />
+                <field name="meat_time" />
+                <field name="administered_dose" />
+                <field name="duration" />
+                <field name="description" />
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="posology_action">
+        <field name="name">Posology</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">posology</field>
+        <field name="view_mode">tree</field>
+        <field name="context">{"visible_product": True}</field>
+    </record>
+
+    <menuitem
+        id="posology_menu"
+        parent="animal.menu_config"
+        sequence="50"
+        action="posology_action"
+    />
+
+    <record id="duplicate_posology_act_server" model="ir.actions.server">
+        <field name="name">Duplicate</field>
+        <field name="model_id" ref="model_posology" />
+        <field name="binding_model_id" ref="model_posology" />
+        <field name="state">code</field>
+        <field name="code">env["posology"]._duplicate()</field>
+    </record>
+
+</odoo>
