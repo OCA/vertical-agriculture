@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 14.0\n"
+"Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -58,8 +58,6 @@ msgstr ""
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_posology__display_name
-#: model:ir.model.fields,field_description:animal_medicament.field_posology_mixin__display_name
-#: model:ir.model.fields,field_description:animal_medicament.field_product_product__display_name
 msgid "Display Name"
 msgstr ""
 
@@ -96,8 +94,6 @@ msgstr ""
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_posology__id
-#: model:ir.model.fields,field_description:animal_medicament.field_posology_mixin__id
-#: model:ir.model.fields,field_description:animal_medicament.field_product_product__id
 msgid "ID"
 msgstr ""
 
@@ -113,8 +109,6 @@ msgstr ""
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_posology____last_update
-#: model:ir.model.fields,field_description:animal_medicament.field_posology_mixin____last_update
-#: model:ir.model.fields,field_description:animal_medicament.field_product_product____last_update
 msgid "Last Modified on"
 msgstr ""
 
@@ -189,14 +183,13 @@ msgid "Posology for medical devices"
 msgstr ""
 
 #. module: animal_medicament
-#: model:ir.model,name:animal_medicament.model_product_product
 #: model:ir.model.fields,field_description:animal_medicament.field_posology__product_id
 msgid "Product"
 msgstr ""
 
 #. module: animal_medicament
-#: model:ir.model.fields,help:animal_medicament.field_posology__categ_id
-msgid "Select category for the current product"
+#: model:ir.model,name:animal_medicament.model_product_product
+msgid "Product Variant"
 msgstr ""
 
 #. module: animal_medicament
