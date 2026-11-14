@@ -6,43 +6,45 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2026-11-14 14:46+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_posology__administered_dose
 msgid "Administered Dose"
-msgstr ""
+msgstr "Dose somministrata"
 
 #. module: animal_medicament
 #: model:ir.model.fields,help:animal_medicament.field_product_product__market_authorization
 msgid "Authorization to market"
-msgstr ""
+msgstr "Autorizzazione all'immissione in commercio"
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_posology__categ_id
 msgid "Category"
-msgstr ""
+msgstr "Categoria"
 
 #. module: animal_medicament
 #: model:ir.model.fields,help:animal_medicament.field_product_product__issue_condition
 msgid "Conditions of issue"
-msgstr ""
+msgstr "Condizioni di rilascio"
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_posology__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creato da"
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_posology__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creato il"
 
 #. module: animal_medicament
 #: model:ir.model.fields.selection,name:animal_medicament.selection__posology__unit_meat__day
@@ -50,29 +52,29 @@ msgstr ""
 #: model:ir.model.fields.selection,name:animal_medicament.selection__posology_mixin__unit_meat__day
 #: model:ir.model.fields.selection,name:animal_medicament.selection__posology_mixin__unit_milk__day
 msgid "Day"
-msgstr ""
+msgstr "Giorno"
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_posology__description
 msgid "Description"
-msgstr ""
+msgstr "Descrizione"
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_posology__display_name
 #: model:ir.model.fields,field_description:animal_medicament.field_posology_mixin__display_name
 #: model:ir.model.fields,field_description:animal_medicament.field_product_product__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: animal_medicament
 #: model:ir.actions.server,name:animal_medicament.duplicate_posology_act_server
 msgid "Duplicate"
-msgstr ""
+msgstr "Duplica"
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_posology__duration
 msgid "Duration"
-msgstr ""
+msgstr "Durata"
 
 #. module: animal_medicament
 #: model:ir.model.fields.selection,name:animal_medicament.selection__posology__unit_meat__forbidden
@@ -80,12 +82,12 @@ msgstr ""
 #: model:ir.model.fields.selection,name:animal_medicament.selection__posology_mixin__unit_meat__forbidden
 #: model:ir.model.fields.selection,name:animal_medicament.selection__posology_mixin__unit_milk__forbidden
 msgid "Forbidden"
-msgstr ""
+msgstr "Vietato"
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_posology__frequency
 msgid "Frequency"
-msgstr ""
+msgstr "Frequenza"
 
 #. module: animal_medicament
 #: model:ir.model.fields.selection,name:animal_medicament.selection__posology__unit_meat__hour
@@ -93,143 +95,143 @@ msgstr ""
 #: model:ir.model.fields.selection,name:animal_medicament.selection__posology_mixin__unit_meat__hour
 #: model:ir.model.fields.selection,name:animal_medicament.selection__posology_mixin__unit_milk__hour
 msgid "Hour"
-msgstr ""
+msgstr "Ora"
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_posology__id
 #: model:ir.model.fields,field_description:animal_medicament.field_posology_mixin__id
 #: model:ir.model.fields,field_description:animal_medicament.field_product_product__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_posology__interval
 msgid "Interval"
-msgstr ""
+msgstr "Intervallo"
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_product_product__issue_condition
 msgid "Issue Condition"
-msgstr ""
+msgstr "Condizione di rilascio"
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_posology____last_update
 #: model:ir.model.fields,field_description:animal_medicament.field_posology_mixin____last_update
 #: model:ir.model.fields,field_description:animal_medicament.field_product_product____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_posology__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Ultimo aggiornamento di"
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_posology__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Ultimo aggiornamento il"
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_product_product__market_authorization
 msgid "Market Authorization"
-msgstr ""
+msgstr "Autorizzazione all'immissione in commercio"
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_posology__meat_time
 #: model:ir.model.fields,field_description:animal_medicament.field_posology_mixin__meat_time
 msgid "Meat time"
-msgstr ""
+msgstr "Tempo di sospensione carne"
 
 #. module: animal_medicament
 #: model_terms:ir.ui.view,arch_db:animal_medicament.product_normal_form_view
 msgid "Medical"
-msgstr ""
+msgstr "Medico"
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_product_product__medical_register_link
 msgid "Medical Register Link"
-msgstr ""
+msgstr "Link al registro medico"
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_posology__milk_time
 #: model:ir.model.fields,field_description:animal_medicament.field_posology_mixin__milk_time
 msgid "Milk time"
-msgstr ""
+msgstr "Tempo di sospensione latte"
 
 #. module: animal_medicament
 #: model:ir.model.fields.selection,name:animal_medicament.selection__posology__unit_milk__milking
 #: model:ir.model.fields.selection,name:animal_medicament.selection__posology_mixin__unit_milk__milking
 msgid "Milking"
-msgstr ""
+msgstr "Mungitura"
 
 #. module: animal_medicament
 #: model:ir.model.fields,help:animal_medicament.field_posology__frequency
 msgid "Number of times per unit of time"
-msgstr ""
+msgstr "Numero di volte per unità di tempo"
 
 #. module: animal_medicament
 #: model_terms:ir.ui.view,arch_db:animal_medicament.product_normal_form_view
 msgid "Posologies"
-msgstr ""
+msgstr "Posologie"
 
 #. module: animal_medicament
 #: model:ir.actions.act_window,name:animal_medicament.posology_action
 #: model:ir.model.fields,field_description:animal_medicament.field_product_product__posology_ids
 #: model:ir.ui.menu,name:animal_medicament.posology_menu
 msgid "Posology"
-msgstr ""
+msgstr "Posologia"
 
 #. module: animal_medicament
 #: model:ir.model,name:animal_medicament.model_posology_mixin
 msgid "Posology fields used in Posology and Prescription"
-msgstr ""
+msgstr "Campi di posologia usati in Posologia e Prescrizione"
 
 #. module: animal_medicament
 #: model:ir.model,name:animal_medicament.model_posology
 msgid "Posology for medical devices"
-msgstr ""
+msgstr "Posologia per dispositivi medici"
 
 #. module: animal_medicament
 #: model:ir.model,name:animal_medicament.model_product_product
 #: model:ir.model.fields,field_description:animal_medicament.field_posology__product_id
 msgid "Product"
-msgstr ""
+msgstr "Prodotto"
 
 #. module: animal_medicament
 #: model:ir.model.fields,help:animal_medicament.field_posology__categ_id
 msgid "Select category for the current product"
-msgstr ""
+msgstr "Seleziona la categoria per il prodotto corrente"
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_posology__specie_id
 msgid "Specie"
-msgstr ""
+msgstr "Specie"
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_product_product__therapist_code
 msgid "Therapist Code"
-msgstr ""
+msgstr "Codice terapeuta"
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_posology__unit_meat
 #: model:ir.model.fields,field_description:animal_medicament.field_posology_mixin__unit_meat
 msgid "Unit Meat"
-msgstr ""
+msgstr "Unità carne"
 
 #. module: animal_medicament
 #: model:ir.model.fields,field_description:animal_medicament.field_posology__unit_milk
 #: model:ir.model.fields,field_description:animal_medicament.field_posology_mixin__unit_milk
 msgid "Unit Milk"
-msgstr ""
+msgstr "Unità latte"
 
 #. module: animal_medicament
 #: model:ir.model.fields,help:animal_medicament.field_posology__meat_time
 #: model:ir.model.fields,help:animal_medicament.field_posology_mixin__meat_time
 msgid "Waiting time for meat case by unit"
-msgstr ""
+msgstr "Tempo di attesa per la carne per unità"
 
 #. module: animal_medicament
 #: model:ir.model.fields,help:animal_medicament.field_posology__milk_time
 #: model:ir.model.fields,help:animal_medicament.field_posology_mixin__milk_time
 msgid "Waiting time for milk case by unit"
-msgstr ""
+msgstr "Tempo di attesa per il latte per unità"
